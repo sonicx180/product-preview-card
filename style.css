@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Outfit:wght@300&family=Oxygen:wght@300&family=REM&family=Vesper+Libre:wght@500&display=swap');
+
+html, body {
+    background-color: #ffdbe0;
+}
+
+h2 {
+    font-family:'Lato', Helvetica !important;
+}
+div {
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card {
+   
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px lightgray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:40%;
+    border-radius: 5px;
+
+}
+p {
+    font-family:'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+.price {
+    font-family:'Lato', Arial, Helvetica, sans-serif;
+    font-weight:700;
+}
+.price1 {
+    font-size: large;
+    font-weight:bold !important;
+    color:rgb(65,129,107);
+}
+
+.price2 {
+    text-decoration: line-through;
+    color:gray;
+}
+#add-cart {
+    background-color:rgb(65,129,107);
+    color:white;
+    font-family:'Outfit', Arial, Helvetica, sans-serif;
+    border:none;
+    border-radius: 5px;
+    margin:10px 30px;
+    padding:10px 40px;
+}
+#perfum {
+    font-family:'Vesper Libre','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:3px;
+}
+
+#product-img-desktop {
+   
+    width:50%;
+    float:left;
+    margin-right:10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+#product-img-mobile {
+    display:none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:800px) {
+    #card {
+        width:70%;
+    }
+}
+@media screen and (max-width:500px) {
+    #card {
+        height:90%;
+
+    }
+    
+    #product-img-desktop {
+        display:none;
+    }
+    #product-img-mobile {
+        display:block;
+        width:100%;
+    }
+    .attribution {
+        font-size:10px;
+    }
+}
